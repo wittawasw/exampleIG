@@ -3,7 +3,7 @@ InstanceOf: ExamplePatient
 
 * identifier
   * system = "http://example-ig.com/patients"
-  * value = "0001"
+  * value = "PATIENT0001"
 * active = true
 * name
   * given[0] = "Firstname"
@@ -18,9 +18,3 @@ InstanceOf: ExamplePatient
 * telecom[0]
   * system = #phone
   * value = "010002023"
-// * generalPractitioner[0].reference = Practitioner/MyPractitionerExample
-// * managingOrganization.reference = Organization/MyOrganizationExample
-
-// Custom Extension Example
-// * extension[0].url = http://example.com/extensions#customExtension
-// * extension[0].valueString = "Custom Value"

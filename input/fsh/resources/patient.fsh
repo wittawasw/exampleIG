@@ -8,22 +8,18 @@ Parent: Patient
   * given 1..*
 * gender
 * birthDate
-* address 0..* // Cardinality modified to allow multiple addresses
+* address 0..*
   * line 1..*
   * city 0..1
   * postalCode 0..1
   * country 0..1
-* telecom 0..* // Cardinality modified to allow multiple telecoms
+* telecom 0..*
   * system
   * value
-* generalPractitioner 0..* // Cardinality modified to allow multiple general practitioners
+* generalPractitioner 0..*
   * reference
-* managingOrganization 0..1 // Cardinality modified to allow one managing organization
+* managingOrganization 0..1
 
-// Terminology Binding
-* gender // Gender terminology binding to custom ValueSet MyGenderValueSet
-
-// Custom Extensions
-* extension 0..* // Cardinality modified to allow multiple extensions
-  * url // Custom extension URL
-  * value[x] // Extension value (can be any FHIR data type)
+* extension 0..*
+  * url
+  * value[x]

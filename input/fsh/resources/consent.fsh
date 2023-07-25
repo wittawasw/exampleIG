@@ -1,7 +1,7 @@
 Profile: ExampleConsent
 Parent: Consent
 * identifier
-* status
+* status from ExampleConsentStateVS (required)
 * category
   * coding 1..*
 * patient
@@ -20,10 +20,6 @@ Parent: Consent
   * securityLabel
   * purpose
 
-// Terminology Binding
-* status // Consent status terminology binding to custom ValueSet MyConsentStatusValueSet
-
-// Custom Extensions
-* extension 0..* // Cardinality modified to allow multiple extensions
-  * url // Custom extension URL
-  * value[x] // Extension value (can be any FHIR data type)
+* extension 0..*
+  * url
+  * value[x]
