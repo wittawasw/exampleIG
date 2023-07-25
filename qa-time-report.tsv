@@ -1,0 +1,8 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-fhir.example.json	2134	-	0	0	0	0	0	0	9	418	0	0	0	0	0	0	0	1	0	0	85	120	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-ExamplePatient.json	1310	55	0	0	1	0	0	1472	0	1304	0	0	1	0	0	0	0	2	0	0	316	2596	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-ExampleOrganization.json	1023	25	0	0	0	0	0	931	0	729	0	0	0	0	0	0	0	0	0	0	177	1050	0	0	0	5	0	0
+fsh-generated/resources/Patient-ExamplePatientInstance.json	691	10	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	6	13	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-ExamplePractitionerRole.json	1059	25	0	0	0	0	0	749	1	755	0	0	0	0	0	0	0	0	0	0	162	770	0	0	0	4	1	1
+fsh-generated/resources/StructureDefinition-ExampleConsent.json	1002	24	0	0	0	0	0	1204	0	1115	0	0	0	0	0	0	0	9	0	0	300	1132	0	0	0	7	0	2
+fsh-generated/resources/StructureDefinition-ExamplePractitioner.json	1139	40	0	0	0	0	0	778	0	719	0	0	0	0	0	0	0	1	0	0	281	943	0	0	0	5	0	1

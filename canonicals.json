@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "fhir.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/fhir.example",
+    "version" : "0.1.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "ExampleConsent",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/ExampleConsent",
+    "version" : "0.1.0",
+    "name" : "ExampleConsent"
+  },
+  {
+    "id" : "ExampleOrganization",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/ExampleOrganization",
+    "version" : "0.1.0",
+    "name" : "ExampleOrganization"
+  },
+  {
+    "id" : "ExamplePatient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/ExamplePatient",
+    "version" : "0.1.0",
+    "name" : "ExamplePatient"
+  },
+  {
+    "id" : "ExamplePractitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/ExamplePractitioner",
+    "version" : "0.1.0",
+    "name" : "ExamplePractitioner"
+  },
+  {
+    "id" : "ExamplePractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/ExamplePractitionerRole",
+    "version" : "0.1.0",
+    "name" : "ExamplePractitionerRole"
+  }
+]

@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Patient/ExamplePatientInstance> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExamplePatientInstance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/ExamplePatient"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/ExamplePatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Firstname Lastname </b> male, DoB: 1981-07-15 ( id: 0001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 010002023</li><li>123 , Random st. City 12345 Thailand </li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example-ig.com/patients"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0001" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Lastname" ] ;
+     fhir:given ( [ fhir:v "Firstname" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "010002023" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1981-07-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "123 , Random st." ] ) ;
+     fhir:city [ fhir:v "City" ] ;
+     fhir:postalCode [ fhir:v "12345" ] ;
+     fhir:country [ fhir:v "Thailand" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
