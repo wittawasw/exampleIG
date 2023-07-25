@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7b9d033c-baaf-4df4-8d8c-4e1ade018eb7"/>
+  <id value="b1805a88-d1d8-4172-b2f0-d1967ef9ec36"/>
   <meta>
-    <lastUpdated value="2023-07-25T20:33:47.805+00:00"/>
+    <lastUpdated value="2023-07-25T20:35:14.696+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -148,10 +148,10 @@
         <version value="0.1.0"/>
         <name value="ExampleConsentStateVS"/>
         <status value="draft"/>
-        <date value="2023-07-25T20:33:47+00:00"/>
+        <date value="2023-07-25T20:35:14+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d7fdd3d6-355e-437b-8880-c3c12b04bf24"/>
-          <timestamp value="2023-07-25T20:34:19+00:00"/>
+          <identifier value="urn:uuid:f81512f6-6033-4f3f-876e-f8144fef577b"/>
+          <timestamp value="2023-07-25T20:35:45+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
