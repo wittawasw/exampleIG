@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ExampleConsentStateVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-ExampleConsentStateCS.html"><code>http://example.org/CodeSystem/ExampleConsentStateCS</code></a></li><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/ExampleConsentStateVS"/>
+  <version value="0.1.0"/>
+  <name value="ExampleConsentStateVS"/>
+  <status value="draft"/>
+  <date value="2023-07-25T20:33:47+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/ExampleConsentStateCS"/>
+    </include>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/consent-state-codes"/>
+    </include>
+  </compose>
+</ValueSet>

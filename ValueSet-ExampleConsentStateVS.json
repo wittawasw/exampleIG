@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ExampleConsentStateVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ExampleConsentStateCS.html\"><code>http://example.org/CodeSystem/ExampleConsentStateCS</code></a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-consent-state-codes.html\">ConsentState</a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/ExampleConsentStateVS",
+  "version" : "0.1.0",
+  "name" : "ExampleConsentStateVS",
+  "status" : "draft",
+  "date" : "2023-07-25T20:33:47+00:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/ExampleConsentStateCS"
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/consent-state-codes"]
+    }]
+  }
+}

@@ -1,5 +1,12 @@
 [
   {
+    "id" : "ExampleConsentStateCS",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/ExampleConsentStateCS",
+    "version" : "0.1.0",
+    "name" : "ExampleConsentStateCS"
+  },
+  {
     "id" : "fhir.example",
     "type" : "ImplementationGuide",
     "url" : "http://example.org/ImplementationGuide/fhir.example",
@@ -40,5 +47,12 @@
     "url" : "http://example.org/StructureDefinition/ExamplePractitionerRole",
     "version" : "0.1.0",
     "name" : "ExamplePractitionerRole"
+  },
+  {
+    "id" : "ExampleConsentStateVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/ExampleConsentStateVS",
+    "version" : "0.1.0",
+    "name" : "ExampleConsentStateVS"
   }
 ]

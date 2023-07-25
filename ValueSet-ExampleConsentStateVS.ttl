@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/ExampleConsentStateVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleConsentStateVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ExampleConsentStateCS.html\"><code>http://example.org/CodeSystem/ExampleConsentStateCS</code></a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-consent-state-codes.html\">ConsentState</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ValueSet/ExampleConsentStateVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ExampleConsentStateVS"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-25T20:33:47+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/ExampleConsentStateCS"^^xsd:anyURI ]
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.org/fhir/ValueSet/consent-state-codes"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/ValueSet/consent-state-codes>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

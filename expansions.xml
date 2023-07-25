@@ -1,9 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="443b16dd-f1e6-4cd5-a58d-e98678a73e13"/>
+  <id value="7b9d033c-baaf-4df4-8d8c-4e1ade018eb7"/>
   <meta>
-    <lastUpdated value="2023-07-25T16:12:23.367+00:00"/>
+    <lastUpdated value="2023-07-25T20:33:47.805+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/ExampleConsentStateVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-ExampleConsentStateCS.html">ExampleConsentStateCS v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html">ConsentState v4.0.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState v4.0.1 (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-CodeSystem-ExampleConsentStateCS-invalid"> </a>  
+                  <a href="CodeSystem-ExampleConsentStateCS.html#ExampleConsentStateCS-invalid">invalid</a>
+                </td>
+                <td>http://example.org/CodeSystem/ExampleConsentStateCS</td>
+                <td>Invalid</td>
+                <td>
+                  <div>
+                    <p>The consent is invalid by law or other reasons</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-consent-state-codes-draft"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-draft">draft</a>
+                </td>
+                <td>http://hl7.org/fhir/consent-state-codes</td>
+                <td>Pending</td>
+                <td>
+                  <div>
+                    <p>The consent is in development or awaiting use but is not yet intended to be acted upon.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-consent-state-codes-proposed"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-proposed">proposed</a>
+                </td>
+                <td>http://hl7.org/fhir/consent-state-codes</td>
+                <td>Proposed</td>
+                <td>
+                  <div>
+                    <p>The consent has been proposed but not yet agreed to by all parties. The negotiation stage.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-consent-state-codes-active"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-active">active</a>
+                </td>
+                <td>http://hl7.org/fhir/consent-state-codes</td>
+                <td>Active</td>
+                <td>
+                  <div>
+                    <p>The consent is to be followed and enforced.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-consent-state-codes-rejected"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-rejected">rejected</a>
+                </td>
+                <td>http://hl7.org/fhir/consent-state-codes</td>
+                <td>Rejected</td>
+                <td>
+                  <div>
+                    <p>The consent has been rejected by one or more of the parties.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-consent-state-codes-inactive"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-inactive">inactive</a>
+                </td>
+                <td>http://hl7.org/fhir/consent-state-codes</td>
+                <td>Inactive</td>
+                <td>
+                  <div>
+                    <p>The consent is terminated or replaced.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-consent-state-codes-entered-in-error"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-entered-in-error">entered-in-error</a>
+                </td>
+                <td>http://hl7.org/fhir/consent-state-codes</td>
+                <td>Entered in Error</td>
+                <td>
+                  <div>
+                    <p>The consent was created wrongly (e.g. wrong patient) and should be ignored.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/ExampleConsentStateVS"/>
+        <version value="0.1.0"/>
+        <name value="ExampleConsentStateVS"/>
+        <status value="draft"/>
+        <date value="2023-07-25T20:33:47+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:d7fdd3d6-355e-437b-8880-c3c12b04bf24"/>
+          <timestamp value="2023-07-25T20:34:19+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/CodeSystem/ExampleConsentStateCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/consent-state-codes|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/ExampleConsentStateCS"/>
+            <code value="invalid"/>
+            <display value="Invalid"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/consent-state-codes"/>
+            <code value="draft"/>
+            <display value="Pending"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/consent-state-codes"/>
+            <code value="proposed"/>
+            <display value="Proposed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/consent-state-codes"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/consent-state-codes"/>
+            <code value="rejected"/>
+            <display value="Rejected"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/consent-state-codes"/>
+            <code value="inactive"/>
+            <display value="Inactive"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/consent-state-codes"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in Error"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

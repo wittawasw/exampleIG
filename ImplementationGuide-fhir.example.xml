@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="ExampleIG"/>
   <status value="draft"/>
-  <date value="2023-07-25T16:12:23+00:00"/>
+  <date value="2023-07-25T20:33:47+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -433,6 +433,26 @@
         <reference value="StructureDefinition/ExampleConsent"/>
       </reference>
       <name value="ExampleConsent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ExampleConsentStateCS"/>
+      </reference>
+      <name value="ExampleConsentStateCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ExampleConsentStateVS"/>
+      </reference>
+      <name value="ExampleConsentStateVS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

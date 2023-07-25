@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "ExampleIG",
   "status" : "draft",
-  "date" : "2023-07-25T16:12:23+00:00",
+  "date" : "2023-07-25T20:33:47+00:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -583,6 +583,28 @@
         "reference" : "StructureDefinition/ExampleConsent"
       },
       "name" : "ExampleConsent",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ExampleConsentStateCS"
+      },
+      "name" : "ExampleConsentStateCS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ExampleConsentStateVS"
+      },
+      "name" : "ExampleConsentStateVS",
       "exampleBoolean" : false
     },
     {
