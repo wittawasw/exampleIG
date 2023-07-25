@@ -7,8 +7,6 @@ Parent: Consent
 * patient
   * reference
 * dateTime
-* performer
-  * function
 * organization
   * reference
 * provision
